@@ -1,0 +1,199 @@
+:root {
+      --bg: rgba(255, 255, 255, 0.301);
+      --border-radius: 20px;
+      --shadow: 0px 0px 50px rgba(0, 0, 0, 100);
+}
+
+
+
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+img, .logo {
+    width: 200px;
+}
+
+.newfont {
+  font-family: "MedievalSharp", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.header {
+    background-color: var(--bg);
+    text-align: center;
+    padding: 1px;
+    display: flex; /*makes the header a flex container*/
+    align-items: center; /*aligns vertically*/
+    justify-content: space-between; /*Space out the logo and nav items*/
+    padding: 10px 20px;
+}
+
+.header ul {
+    list-style-type: none;
+    display: flex; /*makes list horizontal*/
+    justify-content: flex-end; /*sits to the right*/
+    margin: 0;
+    padding: 10px 30px 0 0;
+}
+
+.header li {
+    margin-left: 20px; /*Adds space in between items*/
+    font-size: 23px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    box-shadow: var(--shadow);
+}
+
+body {
+
+    border: 10px solid black;
+    background: radial-gradient(circle, white, black 90%);
+    background-attachment: fixed;
+    color:rgb(0, 0, 0);
+    margin: auto;
+    padding-bottom: 200px;
+}
+
+.center-wrapper {
+    padding: 5% 0 10% 0;
+  
+}
+
+.about-me {
+    background: var(--bg);
+    max-width: 800px;
+    min-width: 400px;
+    margin: 0px auto;
+    border-radius: var(--border-radius);
+    padding: 0 2% 1% 2%;
+    box-shadow: var(--shadow);
+}
+
+.skills-list, .fun-facts {
+    background: var(--bg);
+    max-width: 500px;
+    min-width: 200px;
+    margin: 50px 150px;
+    border-radius: var(--border-radius);
+    padding-left: 2%;
+    padding-right: 2%;
+    box-shadow: var(--shadow);
+}
+
+
+
+.work-values, .lets-connect {
+    background: var(--bg);
+    max-width: 500px;
+    min-width: 200px;
+    margin: 50px 150px;
+    margin-left: auto;
+    border-radius: var(--border-radius);
+    min-height: auto;
+    padding: 0 2% 0 2%;
+    box-shadow: var(--shadow);
+}
+
+
+
+
+#quote {
+    font-style: italic;
+    line-height: 1.7;
+    text-align: center;
+}
+#artist, #quote {
+    font-size: 12px;
+    text-align: center;
+}
+
+
+/*links*/
+.header a {
+
+    text-decoration: none;
+    color: black;
+    padding: 7px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, border-radius 0.3s ease; /*smooth transition when hovering over the link*/
+    
+}
+.header a:hover {
+
+    color: white;
+    background-color: black;
+    padding: 7px;
+    border-radius: 15px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 35px;
+    padding-top: 25px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 5px;
+}
+
+ul {
+    columns: 2;
+    column-gap: 0; 
+}
+
+ul li {
+    margin-bottom: 10px;
+  }
+
+.display-images {
+    text-align: center;
+}
+
+/*THE GAME*/
+.you-lost {
+    color: crimson;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.you-lost:hover {
+    color: black;
+  transform: rotate(-2deg) scale(1.05);
+}
+
+
+/*Javascript*/
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+/* Optional: Style the toggle button */
+#darkModeToggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #222;
+  color: #fff;
+  cursor: pointer;
+}
+
+body.dark-mode #darkModeToggle {
+  background-color: #ddd;
+  color: #000;
+}

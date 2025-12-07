@@ -1,0 +1,213 @@
+:root {
+      --bg: rgba(255, 255, 255, 0.301);
+      --border-radius: 20px;
+      --shadow: 0px 0px 50px rgba(0, 0, 0, 100);
+}
+
+.newfont {
+  font-family: "MedievalSharp", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  padding: 7px;
+}
+a:hover {
+
+  color: white;
+  
+  padding: 7px;
+}
+
+.header a {
+
+    text-decoration: none;
+    color: black;
+    padding: 7px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, border-radius 0.3s ease; /*smooth transition when hovering over the link*/
+    
+}
+
+.header a:hover {
+
+    color: white;
+    background-color: black;
+    padding: 7px;
+    border-radius: 15px;
+}
+
+/*universal styles*/
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+/*
+img {
+    
+}*/
+
+.header {
+    background-color: var(--bg);
+    text-align: center;
+    padding: 1px;
+    display: flex; /*makes the header a flex container*/
+    align-items: center; /*aligns vertically*/
+    justify-content: space-between; /*Space out the logo and nav items*/
+    padding: 10px 20px;
+}
+
+.header ul {
+    list-style-type: none;
+    display: flex; /*makes list horizontal*/
+    justify-content: flex-end; /*sits to the right*/
+    margin: 0;
+    padding: 10px 30px 0 0;
+}
+
+.header li {
+    margin-left: 20px; /*Adds space in between items*/
+    font-size: 23px;
+    padding: 20px;
+    font-weight: bold;
+}
+
+body {
+
+    border: 10px solid black;
+    background: radial-gradient(circle, white, black 90%);
+    background-attachment: fixed;
+    color:rgb(0, 0, 0);
+    margin: auto;
+    padding-bottom: 200px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 35px;
+    padding-top: 25px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#quote {
+  font-style: italic;
+  line-height: 1.7;
+  text-align: center;
+}
+
+#artist, #quote {
+  font-size: 12px;
+  text-align: center;
+}
+/*end*/
+
+/*Javascript*/
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+/* Optional: Style the toggle button */
+#darkModeToggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #222;
+  color: #fff;
+  cursor: pointer;
+}
+
+body.dark-mode #darkModeToggle {
+  background-color: #ddd;
+  color: #000;
+}
+/*end*/
+
+/*photos-animation*/
+
+.fadeimg {
+    width: 50%;
+    max-width: 1000px;
+    height: auto;
+    display: block;
+    margin: auto;
+    padding: 2px;
+
+    /*soft edges*/
+
+    padding: 20px; 
+    border-radius: 50px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    opacity: 0;
+    animation: fadeInAnimation 2s forwards;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes fadeInAnimation {
+
+    to {
+        opacity: 1;
+    }
+}
+.fadeimg:hover {
+    transform: scale(1.1);
+}
+
+hr {
+    border: none;
+    height: 3px;
+    max-width: 700px;
+    background-color: black;
+    padding: 2px;
+}
+
+
+
+
+
+
+
+
+.other-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    
+  }
+  
+.other-nav div h1 {
+    font-size: medium;
+    text-align: center;
+}
+
+h1 {
+    font-size: medium;
+    text-align: center;
+}
+
+.about-page {
+    text-align: center;
+}
+
+
