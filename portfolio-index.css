@@ -83,8 +83,10 @@ body {
     background: radial-gradient(circle, white, black 90%);
     background-attachment: fixed;
     color:rgb(0, 0, 0);
-    margin: auto;
-    padding-bottom: 200px;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -111,8 +113,9 @@ h2 {
 
 /*Javascript*/
 body.dark-mode {
-  background-color: #121212;
+  background: radial-gradient(circle, black, rgb(94, 94, 94) 100%);
   color: #f1f1f1;
+
 }
 
 /* Optional: Style the toggle button */
