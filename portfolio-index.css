@@ -59,20 +59,25 @@ a:hover {
 * {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+    /**/
 }
 /*
 img {
     
 }*/
 
+body {
+    background-image: url(portfolio_photos/photo1.jpg);
+}
+
 .header {
     /*background-color: var(--bg);*/
     text-align: center;
-    padding: 1px;
-    display: flex; /*makes the header a flex container*/
+    padding: 20px 0;
+    
     align-items: center; /*aligns vertically*/
-    justify-content: space-between; /*Space out the logo and nav items*/
-    padding: 10px 20px;
+    
+    
 }
 
 ul {
@@ -85,15 +90,15 @@ ul {
 }
 
 
-body {
+.custom-body {
 
-    border: 10px solid black;
+    border: 10px double rgb(230, 226, 226);
     background: radial-gradient(circle, rgb(4, 2, 147), black 90%);
-    background-attachment: fixed;
+    
     color:rgb(255, 255, 255);
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
+    margin: 0 30vh 0 30vh;
+    
+    min-height: 97.9vh;
     box-sizing: border-box;
 }
 
