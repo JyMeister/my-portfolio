@@ -116,6 +116,10 @@ h2 {
     font-size: 30px;
 }
 
+#typing-message {
+    
+}
+
 #quote {
   font-style: italic;
   line-height: 1.7;
@@ -202,32 +206,5 @@ hr {
 
 
 
-
-.other-nav {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 20px 10px;
-    
-  }
-  
-.other-nav div h1 {
-    font-size: medium;
-    text-align: center;
-}
-
-h1 {
-    font-size: medium;
-    text-align: center;
-}
-
-.about-page {
-    text-align: center;
-}
 
 
