@@ -1,5 +1,8 @@
 console.log("javascript is connected");
 
+
+// USED BY Home and About pages
+
 const toggleButton = document.getElementById('darkModeToggle');
   
   toggleButton.addEventListener('click', () => {
@@ -16,7 +19,7 @@ const toggleButton = document.getElementById('darkModeToggle');
 
 
 
-const title = "Welcome to my Portfolio";
+const title = "Welcome to JayMeister Develeopment";
 const message = "Hi! My name is Jay Braun. I am a Junior Web Developer.";
 const typingTitle = document.getElementById("typing-title");
 const typingMessage = document.getElementById("typing-message");
@@ -26,7 +29,7 @@ function type() {
   if (i < title.length) {
     typingTitle.textContent += title[i];
     i++;
-    setTimeout(type, 150); // adjust speed here (lower = faster)
+    setTimeout(type, 95); // adjust speed here (lower = faster)
   } else {
     typingTitle.classList.remove("typing-cursor"); // remove cursor when done
   }
@@ -45,6 +48,10 @@ function typeMessage() {
 }
 typeMessage();
 
+// END //
 
 
 
+function loseTheGame() {
+      alert("😈 You just lost The Game.");
+    }
