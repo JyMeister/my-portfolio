@@ -12,9 +12,9 @@
 
 
 :root {
-      --bg: rgba(255, 255, 255, 0.301);
+      --bg: rgba(0, 27, 84, 0.658);
       --border-radius: 20px;
-      --shadow: 0px 0px 50px rgba(0, 0, 0, 100);
+      --shadow: 5px 5px 8px rgba(179, 0, 255, 0.293);
 }
 
 .newfont {
@@ -27,25 +27,21 @@
 a {
   display: inline-block;
   text-decoration: none;
-  color: black;
+  color: white;
   padding: 7px;
+  transition: background-color 0.3s ease, border-radius 0.3s ease;
+  background-color: var(--bg);
+  box-shadow: var(--shadow);
+  border-radius: 15px;
 }
 a:hover {
 
-  color: white;
+  color: black;
   
   padding: 7px;
 }
 
-.header a {
 
-    text-decoration: none;
-    color: black;
-    padding: 7px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, border-radius 0.3s ease; /*smooth transition when hovering over the link*/
-    
-}
 
 .header a:hover {
 
@@ -62,12 +58,20 @@ a:hover {
     /**/
 }
 
+.x {
+    display: flex;
+    justify-content: center;
+}
+
 .intro {
-    box-shadow: 0 5px 8px rgba(0, 191, 255, 0.293);
+    
+
+    box-shadow: var(--shadow);
     border-radius: 15px;
     padding: 1px 15px;
     margin: 1% 20%;
     text-align: center;
+    background-color: var(--bg);
 }
 
 body {
@@ -92,9 +96,13 @@ ul {
     list-style-type: none;
     display: flex; /*makes list horizontal*/
     justify-content: center; /*sits to the right*/
-    margin: 0;
+    margin: 50px;
     padding: 10px 30px 0 0;
     color: #ffffff;
+}
+
+li {
+    margin: 5px;
 }
 
 
@@ -102,10 +110,8 @@ ul {
 
     border: 10px double rgb(230, 226, 226);
     background: radial-gradient(circle, rgb(4, 2, 147), black 90%);
-    
     color:rgb(255, 255, 255);
     margin: 0 30vh 0 30vh;
-    
     min-height: 97.9vh;
     box-sizing: border-box;
 }
@@ -168,26 +174,20 @@ body.dark-mode #darkModeToggle {
 /*photos-animation*/
 
 .fadeimg {
-    width: 50%;
-    
+    width: 20%;
     height: auto;
     display: block;
     margin: auto;
-    
-
-    /*soft edges*/
     max-width: 500px;
     padding: 20px; 
     border-radius: 250px;
-    box-shadow: 0 8px 10px rgba(0, 191, 255, 0.293);
+    box-shadow: var(--shadow);
+    background-color: var(--bg);
     opacity: 0;
     animation: fadeInAnimation 2s forwards;
-    
-    
-    
-    
     align-items: center;
 }
+
 @keyframes fadeInAnimation {
 
     to {
