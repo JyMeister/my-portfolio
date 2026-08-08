@@ -39,6 +39,8 @@ function typeMessage() {
     typingMessage.textContent += message[j];
     j++;
     setTimeout(typeMessage, 60); // adjust speed here (lower = faster)
+  } else {
+    typingMessage.classList.remove("typing-cursor"); // remove cursor when done
   }
 }
 typeMessage();
