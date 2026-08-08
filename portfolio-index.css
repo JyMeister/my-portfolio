@@ -74,6 +74,10 @@ body {
     background-image: url(portfolio_photos/stand-in-bg.jpg);
 }
 
+body > img {
+    position: fixed; /* Put the background image in the html file instead of the css file and then set the position the 'fixed'*/
+}
+
 .header {
     /*background-color: var(--bg);*/
     text-align: center;
@@ -160,9 +164,6 @@ body.dark-mode #darkModeToggle {
 }
 /*end*/
 
-img {
-   
-}
 
 /*photos-animation*/
 

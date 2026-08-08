@@ -16,7 +16,7 @@ const toggleButton = document.getElementById('darkModeToggle');
 
 
 
-const title = "Welcome to my Portfolio!";
+const title = "Welcome to my Portfolio";
 const message = "Welcome to my portfolio website! I'm Jay Braun, a junior web developer with a passion for creating clean, " +
  "functional, and creative websites. This site is a showcase of my skills, projects, and journey in the world of web development. " +
  "Feel free to explore and learn more about me and my work!";
@@ -40,7 +40,7 @@ function typeMessage() {
   if (j < message.length) {
     typingMessage.textContent += message[j];
     j++;
-    setTimeout(typeMessage, 50); // adjust speed here (lower = faster)
+    setTimeout(typeMessage, 11); // adjust speed here (lower = faster)
   }
 }
 typeMessage();
