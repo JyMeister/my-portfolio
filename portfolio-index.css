@@ -61,13 +61,10 @@ a:hover {
     box-sizing: border-box;
     /**/
 }
-/*
-img {
-    
-}*/
+
 
 body {
-    background-image: url(portfolio_photos/photo1.jpg);
+    background-image: url(portfolio_photos/stand-in-bg.jpg);
 }
 
 .header {
