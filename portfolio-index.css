@@ -14,7 +14,7 @@
 :root {
       --bg: rgba(0, 27, 84, 0.658);
       --border-radius: 20px;
-      --shadow: 5px 5px 8px rgba(0, 188, 79, 0.458);
+      --shadow: 3px 3px 8px rgba(0, 188, 166, 0.638);
       --text-shadow: 2px 2px 4px #00fff7ba;
 }
 
@@ -35,17 +35,8 @@ a {
   border-radius: 15px;
   text-shadow: var(--text-shadow);
 }
+
 a:hover {
-
-  color: black;
-  
-  padding: 7px;
-}
-
-
-
-.header a:hover {
-
     color: white;
     background-color: black;
     padding: 7px;
@@ -62,7 +53,6 @@ a:hover {
 
 
 .intro {
-    
     text-shadow: var(--text-shadow);
     box-shadow: var(--shadow);
     border-radius: 15px;
@@ -87,8 +77,6 @@ body > img {
     padding: 20px 0;
     text-shadow: var(--text-shadow);
     align-items: center; /*aligns vertically*/
-    
-    
 }
 
 ul {
@@ -106,7 +94,6 @@ li {
 
 
 .custom-body {
-
     border: 10px double rgb(230, 226, 226);
     background: radial-gradient(circle, rgb(4, 2, 147), black 90%);
     color:rgb(255, 255, 255);
@@ -126,7 +113,7 @@ h2 {
 }
 
 #typing-title {
-    font-size: 30px;
+    font-size: 50px;
 }
 
 
