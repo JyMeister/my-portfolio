@@ -34,7 +34,7 @@ a {
   text-decoration: none;
   color: white;
   padding: 20px;
-  
+  transition: background-color 0.3s ease, border-radius 0.3s ease; /*smooth transition when hovering over the link*/
   background-color: var(--bg);
   box-shadow: var(--shadow);
   border-radius: 30px;
@@ -43,13 +43,10 @@ a {
 
 a:hover {
     color: white;
-    background-image: url(portfolio_photos/button-img.png);
-    transition: opacity 0.5s ease-in-out;
-    /*background-color: rgba(81, 2, 88, 0.479);*/
+    background: url(portfolio_photos/button-img.png);
+    background-color: rgba(81, 2, 88, 0.479);
     padding: 20px;
     border-radius: 50px;
-    
-    
 }
 
 /*universal styles*/
