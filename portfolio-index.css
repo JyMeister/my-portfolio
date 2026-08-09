@@ -30,23 +30,43 @@
 }
 
 a {
+  position: relative; /* needed so the ::before pseudo-element can be positioned inside it */
   display: inline-block;
   text-decoration: none;
   color: white;
   padding: 20px;
-  transition: background-color 0.3s ease, border-radius 0.3s ease; /*smooth transition when hovering over the link*/
+  transition: background-color 0.3s ease, border-radius 0.3s ease;
   background-color: var(--bg);
   box-shadow: var(--shadow);
   border-radius: 30px;
   text-shadow: var(--text-shadow);
+  overflow: hidden; /* keeps the fading image from spilling outside the rounded corners */
+  z-index: 0;
+}
+
+a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(portfolio_photos/button-img.png);
+  background-size: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: -1; /* sits behind the link text */
 }
 
 a:hover {
     color: white;
-    background: url(portfolio_photos/button-img.png);
     background-color: rgba(81, 2, 88, 0.479);
     padding: 20px;
     border-radius: 50px;
+}
+
+a:hover::before {
+    opacity: 1;
 }
 
 /*universal styles*/
@@ -100,20 +120,9 @@ ul {
 li {
     margin: 5px;
     padding: 10px;
-    
 }
 
-@keyframes list {
-    0% {
-        transform: rotate(0);
-    }
-    50% {
-        transform: rotate(180deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-}
+
 
 
 .custom-body {
