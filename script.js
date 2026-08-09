@@ -19,7 +19,7 @@ const toggleButton = document.getElementById('darkModeToggle');
 
 
 
-const title = "Welcome to JayMeister Develeopment";
+const title = "Welcome to JayMeister Development";
 const message = "Hi! My name is Jay Braun. I am a Junior Web Developer.";
 const typingTitle = document.getElementById("typing-title");
 const typingMessage = document.getElementById("typing-message");
@@ -29,7 +29,7 @@ function type() {
   if (i < title.length) {
     typingTitle.textContent += title[i];
     i++;
-    setTimeout(type, 95); // adjust speed here (lower = faster)
+    setTimeout(type, 97.5); // adjust speed here (lower = faster)
   } else {
     typingTitle.classList.remove("typing-cursor"); // remove cursor when done
   }

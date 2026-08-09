@@ -30,26 +30,27 @@ a {
   display: inline-block;
   text-decoration: none;
   color: white;
-  padding: 7px;
-  transition: background-color 0.3s ease, border-radius 0.3s ease;
+  padding: 20px;
+  transition: background-color 0.5s ease;
   background-color: var(--bg);
   box-shadow: var(--shadow);
-  border-radius: 15px;
+  border-radius: 30px;
   text-shadow: var(--text-shadow);
 }
 
 a:hover {
     color: white;
-    background-color: black;
-    padding: 7px;
-    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.126);
+    padding: 20px;
+    border-radius: 50px;
+    
 }
 
 /*universal styles*/
 * {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-    /**/
+    
 }
 
 
@@ -88,16 +89,32 @@ ul {
     margin: 50px;
     padding: 10px 30px 0 0;
     color: #ffffff;
+    font-size: 30px;
+    
 }
 
 li {
     margin: 5px;
+    padding: 10px;
+    
+}
+
+@keyframes list {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 
 .custom-body {
     border: 10px double rgb(230, 226, 226);
-    background: radial-gradient(circle, rgb(4, 2, 147), black 90%);
+    background: radial-gradient(circle, rgb(0, 79, 140), rgb(1, 0, 58) , black 90%);
     color:rgb(255, 255, 255);
     margin: 0 30vh 0 30vh;
     min-height: 97.9vh;
@@ -106,13 +123,10 @@ li {
 
 h1 {
     text-align: center;
-    font-size: 35px;
     padding-top: 25px;
 }
 
-h2 {
-    text-align: center;
-}
+
 
 #typing-title {
     font-size: 50px;
@@ -120,16 +134,9 @@ h2 {
 
 
 
-#quote {
-  font-style: italic;
-  line-height: 1.7;
-  text-align: center;
-}
 
-#artist, #quote {
-  font-size: 12px;
-  text-align: center;
-}
+
+
 /*end*/
 
 /*Javascript*/
@@ -155,6 +162,7 @@ body.dark-mode {
 body.dark-mode #darkModeToggle {
   background-color: #ddd;
   color: #000;
+  
 }
 /*end*/
 
@@ -184,13 +192,7 @@ body.dark-mode #darkModeToggle {
 }
 
 
-hr {
-    border: none;
-    height: 3px;
-    max-width: 700px;
-    background-color: black;
-    padding: 2px;
-}
+
 
 
 
