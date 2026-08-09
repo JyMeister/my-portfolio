@@ -1,3 +1,6 @@
+@import "tailwindcss";
+
+
 .typing-cursor::after {
             content: '|';
             animation: blink 0.7s infinite;
@@ -31,7 +34,7 @@ a {
   text-decoration: none;
   color: white;
   padding: 20px;
-  transition: background-color 0.5s ease;
+  
   background-color: var(--bg);
   box-shadow: var(--shadow);
   border-radius: 30px;
@@ -40,9 +43,12 @@ a {
 
 a:hover {
     color: white;
-    background-color: rgba(81, 2, 88, 0.479);
+    background-image: url(portfolio_photos/button-img.png);
+    transition: opacity 0.5s ease-in-out;
+    /*background-color: rgba(81, 2, 88, 0.479);*/
     padding: 20px;
     border-radius: 50px;
+    
     
 }
 
