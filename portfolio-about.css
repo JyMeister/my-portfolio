@@ -67,7 +67,10 @@ img, .logo {
 }
 
 body {
-    background-image: url(portfolio_photos/stand-in-bg.jpg);
+    background-image: url(portfolio_photos/main-bg.png);
+    background-size: cover;
+    background-attachment: fixed; 
+    
 }
 
 .center-wrapper {
