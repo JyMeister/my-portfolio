@@ -92,6 +92,7 @@ a:hover::before {
 body {
     background-image: url(portfolio_photos/main-bg.png);
     background-size: cover;
+    background-attachment: fixed; 
 }
 
 body > img {
