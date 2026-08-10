@@ -13,21 +13,14 @@
     box-sizing: border-box;
 }
 
-custom-body {
-    border: 10px double rgb(230, 226, 226);
-    background: radial-gradient(circle, rgb(4, 2, 147), black 90%);
-    color:rgb(255, 255, 255);
-    margin: 0 30vh 0 30vh;
-    min-height: 97.9vh;
-    box-sizing: border-box;
+.custom-body {
+    margin: 100px;
 }
 
 
 
 /* CODE TO BE REVIEWED */
-img, .logo {
-    width: 200px;
-}
+
 
 .newfont {
   font-family: "MedievalSharp", cursive;
@@ -46,7 +39,7 @@ img, .logo {
     padding: 10px 20px;
 }
 
-.header ul {
+ul {
     list-style-type: none;
     display: flex; /*makes list horizontal*/
     justify-content: flex-end; /*sits to the right*/
@@ -54,17 +47,14 @@ img, .logo {
     padding: 10px 30px 0 0;
 }
 
-.header li {
+li {
     margin-left: 20px; /*Adds space in between items*/
     font-size: 23px;
     padding: 20px;
     font-weight: bold;
 }
 
-.profile-pic {
-    border-radius: 50%;
-    box-shadow: var(--shadow);
-}
+
 
 body {
     background-image: url(portfolio_photos/main-bg.png);
@@ -78,7 +68,7 @@ body {
   
 }
 
-.about-me {
+#about-me {
     background: var(--bg);
     max-width: 800px;
     min-width: 400px;
@@ -88,7 +78,7 @@ body {
     box-shadow: var(--shadow);
 }
 
-.skills-list, .fun-facts {
+#skills-list, #fun-facts {
     background: var(--bg);
     max-width: 500px;
     min-width: 200px;
@@ -101,7 +91,7 @@ body {
 
 
 
-.work-values, .lets-connect {
+#work-values, #lets-connect {
     background: var(--bg);
     max-width: 500px;
     min-width: 200px;
