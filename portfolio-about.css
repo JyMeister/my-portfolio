@@ -13,19 +13,13 @@
     box-sizing: border-box;
 }
 
-.custom-body {
-    margin: 100px;
-    color: white;
-
-}
-
 
 
 /* CODE TO BE REVIEWED */
 
 li {
     margin-left: 20px; /*Adds space in between items*/
-    font-size: 23px;
+    
     padding: 20px;
     font-weight: bold;
 }
@@ -34,10 +28,10 @@ li {
 
 #about-me {
     
-    max-width: 800px;
-    min-width: 400px;
-    margin: 0px auto;
-    border-radius: var(--border-radius);
+    
+    
+   
+    
     padding: 0 2% 1% 2%;
     box-shadow: var(--shadow);
 }
