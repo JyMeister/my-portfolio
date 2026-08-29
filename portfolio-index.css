@@ -42,6 +42,7 @@ a {
   text-shadow: var(--text-shadow);
   overflow: hidden; /* keeps the fading image from spilling outside the rounded corners */
   z-index: 0;
+  cursor: pointer;
 }
 
 a::before {

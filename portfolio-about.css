@@ -6,11 +6,52 @@
       --border-radius: 20px;
       --shadow: 3px 3px 8px rgba(0, 188, 166, 0.638);
       --text-shadow: 2px 2px 4px #00fff7ba;
+      --link-image: url(portfolio_photos/button-img.png);
 }
 
 * {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
+}
+
+a {
+  position: relative; /* needed so the ::before pseudo-element can be positioned inside it */
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  transition: background-color 0.3s ease, border-radius 0.3s ease;
+  background-color: var(--bg);
+  box-shadow: var(--shadow);
+  border-radius: 15px;
+  text-shadow: var(--text-shadow);
+  overflow: hidden; /* keeps the fading image from spilling outside the rounded corners */
+  z-index: 0;
+  cursor: pointer;
+}
+
+a::before {
+    background-image: var(--link-image);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: -1; /* sits behind the link text */
+}
+
+a:hover {
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+a:hover::before {
+    opacity: 1;
 }
 
 
@@ -33,18 +74,15 @@ body {
   background-image: url('/portfolio_photos/main-bg.png');
   background-size: cover;
   background-attachment: fixed;
-}
-
-/* outer <section>: text-white m-100 */
-body > section {
   color: #ffffff;
 }
 
+
 /* header wrapper section: content-center bg-[rgba(0,27,84,0.658)] m-4 border-double border-[10px] border-white rounded-20 */
-body > section {
+.custom-body {
   align-content: center;
   background-color: rgba(0, 27, 84, 0.4);
-  margin: 1rem;
+  margin: 1vh 30vh 0 30vh;
   border-style: double;
   border-width: 10px;
   border-color: #ffffff;
@@ -53,11 +91,13 @@ body > section {
 
 /* h2 headings: font-['MedievalSharp'] font-semibold text-4xl mt-2 */
 h2 {
-  font-family: 'MedievalSharp', cursive;
-  font-weight: 600;
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-  margin-top: 0.5rem;
+    font-family: 'MedievalSharp', cursive;
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    padding-top: 5px;
 }
 
 /* #nav wrapper div: text-white mt-6 */
@@ -74,7 +114,7 @@ h2 {
   padding: 0;
 }
 
-#nav ul li + li {
+#nav ul li {
   margin-left: 1rem; /* space-x-4 only applies margin between items */
 }
 
@@ -88,7 +128,7 @@ h2 {
    #work-values, #fun-facts, #lets-connect:
    bg-[rgba(0,27,84,0.658)] max-w-[56vh] min-w-[100vh] mx-auto rounded-20
    pt-0 px-[2%] pb-[1%] shadow-(--shadow) border-double border-[10px] border-white */
-#about-me,
+
 #skills-list,
 #work-values,
 #fun-facts,
@@ -109,16 +149,24 @@ h2 {
   border-color: #ffffff;
 }
 
-/* h1 (#about-me heading): text-3xl font-bold mb-4 pt-3.5 text-center mt-9 */
-h1 {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  padding-top: 0.875rem;
-  text-align: center;
-  margin-top: 2.25rem;
+#about-me {
+    background-color: rgba(0, 27, 84, 0.658);
+    max-width: 56vh;
+    min-width: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 1%;
+    border-style: double;
+    border-width: 10px;
+    border-color: #ffffff;
 }
+
+/* h1 (#about-me heading): text-3xl font-bold mb-4 pt-3.5 text-center mt-9 */
+
 
 /* section h2 headings ("About Me" siblings): text-3xl font-bold mb-4 pt-3.5 text-center */
 #skills-list h2,
@@ -158,23 +206,18 @@ h1 {
 /* CODE TO BE REVIEWED */
 
 li {
-    margin-left: 20px; /*Adds space in between items*/
-    
+    margin-left: 20px;
+    margin-bottom: 20px; /*Adds space in between items*/
     padding: 20px;
-    font-weight: bold;
+    border-style: dotted;
+    border-width: 2px;
+    border-color: aqua;
+    border-radius: 15px;
 }
 
 
 
-#about-me {
-    
-    
-    
-   
-    
-    padding: 0 2% 1% 2%;
-    box-shadow: var(--shadow);
-}
+
 
 #skills-list, #fun-facts {
     background: var(--bg);
@@ -202,40 +245,15 @@ li {
 }
 
 
-
-
-#quote {
-    font-style: italic;
-    line-height: 1.7;
-    text-align: center;
-}
-#artist, #quote {
-    font-size: 12px;
-    text-align: center;
-}
-
-
 /*links*/
 
 
-h2 {
-    text-align: center;
-    font-size: 20px;
-    padding-top: 5px;
-}
 
 ul {
-    columns: 2;
-    column-gap: 0; 
+    columns: 3;
 }
 
-ul li {
-    margin-bottom: 10px;
-  }
 
-.display-images {
-    text-align: center;
-}
 
 /*THE GAME*/
 .you-lost {
