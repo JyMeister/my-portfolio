@@ -91,14 +91,11 @@ a:hover::before {
 }
 
 body {
-    background-image: url(portfolio_photos/main-bg.png);
+    background-image: url('/portfolio_photos/main-bg.png');
     background-size: cover;
     background-attachment: fixed; 
 }
 
-body > img {
-    position: fixed; /* Put the background image in the html file instead of the css file and then set the position the 'fixed'*/
-}
 
 .header {
     /*background-color: var(--bg);*/
@@ -123,6 +120,8 @@ li {
     margin: 5px;
     padding: 10px;
 }
+
+
 
 
 

@@ -2,10 +2,12 @@
 
 
 :root {
-      --bg: rgba(0, 27, 84, 0.658);
+      --bg: rgba(0, 27, 84, 0.495);
+      --bg-off-set: rgba(8, 14, 27, 0.658);
       --border-radius: 20px;
-      --shadow: 3px 3px 8px rgba(0, 188, 166, 0.638);
+      --shadow: 0px 0px 10px rgba(0, 188, 166, 0.638);
       --text-shadow: 2px 2px 4px #00fff7ba;
+      --glow: 0 0 20px #008bfcae, 0 0 30px #19107d, 0 0 50px rgba(77, 7, 168, 0.996);
       --link-image: url(portfolio_photos/button-img.png);
 }
 
@@ -55,20 +57,6 @@ a:hover::before {
 }
 
 
-/* AI REVIEW */
-
-/* ==========================================================================
-   Vanilla CSS translation of Tailwind utility classes
-   Import the MedievalSharp font (Tailwind arbitrary font-family assumed
-   this was loaded elsewhere, e.g. Google Fonts — add this link in <head>
-   if it isn't already there):
-   <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
-   ========================================================================== */
-
-/* If you have a --shadow custom property defined elsewhere (e.g. :root),
-   keep it. Otherwise this fallback shadow value is used below. */
-
-
 /* body: bg-[url('/portfolio_photos/main-bg.png')] bg-cover bg-fixed */
 body {
   background-image: url('/portfolio_photos/main-bg.png');
@@ -82,7 +70,7 @@ body {
 .custom-body {
   align-content: center;
   background-color: rgba(0, 27, 84, 0.4);
-  margin: 1vh 30vh 0 30vh;
+  margin: 1vh 30vh 1vh 30vh;
   border-style: double;
   border-width: 10px;
   border-color: #ffffff;
@@ -122,18 +110,18 @@ h2 {
 #nav li {
   font-size: 1.25rem;
   line-height: 1.75rem;
+  
 }
 
-/* Shared "panel" section styling used by #about-me, #skills-list,
-   #work-values, #fun-facts, #lets-connect:
-   bg-[rgba(0,27,84,0.658)] max-w-[56vh] min-w-[100vh] mx-auto rounded-20
-   pt-0 px-[2%] pb-[1%] shadow-(--shadow) border-double border-[10px] border-white */
-
+ul {
+    columns: 3;
+}
+#about-me,
 #skills-list,
 #work-values,
 #fun-facts,
 #lets-connect {
-  background-color: rgba(0, 27, 84, 0.658);
+  background-color: var(--bg);
   max-width: 56vh;
   min-width: 100vh;
   margin-left: auto;
@@ -143,32 +131,18 @@ h2 {
   padding-left: 2%;
   padding-right: 2%;
   padding-bottom: 1%;
-  box-shadow: var(--shadow);
-  border-style: double;
-  border-width: 10px;
-  border-color: #ffffff;
+  box-shadow: var(--glow);
+  
 }
 
 #about-me {
-    background-color: rgba(0, 27, 84, 0.658);
-    max-width: 56vh;
-    min-width: 100vh;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 20px;
-    padding-top: 1%;
-    padding-left: 2%;
-    padding-right: 2%;
-    padding-bottom: 1%;
-    border-style: double;
-    border-width: 10px;
-    border-color: #ffffff;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
 }
 
-/* h1 (#about-me heading): text-3xl font-bold mb-4 pt-3.5 text-center mt-9 */
 
 
-/* section h2 headings ("About Me" siblings): text-3xl font-bold mb-4 pt-3.5 text-center */
+#about-me h2,
 #skills-list h2,
 #work-values h2,
 #fun-facts h2,
@@ -181,7 +155,7 @@ h2 {
   text-align: center;
 }
 
-/* .center-wrapper (skills-list, work-values, lets-connect): px-0 pt-[5%] pb-[10%] */
+
 .center-wrapper {
   padding-left: 0;
   padding-right: 0;
@@ -189,69 +163,63 @@ h2 {
   padding-bottom: 10%;
 }
 
-/* .center-wrapper inside #fun-facts has no pt/pb classes, only default centering */
+
 #fun-facts .center-wrapper {
   padding-top: 0;
   padding-bottom: 0;
   text-align: center;
 }
 
-/* "The Game" list item — hook for your loseTheGame() click handler */
+
 .you-lost {
   cursor: pointer;
 }
 
-
-
-/* CODE TO BE REVIEWED */
-
-li {
+#skills-list li, #fun-facts li {
     margin-left: 20px;
     margin-bottom: 20px; /*Adds space in between items*/
-    padding: 20px;
-    border-style: dotted;
-    border-width: 2px;
-    border-color: aqua;
-    border-radius: 15px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    background-color: var(--bg-off-set);
 }
-
-
-
-
 
 #skills-list, #fun-facts {
     background: var(--bg);
     max-width: 500px;
     min-width: 200px;
     margin: 50px 150px;
-    border-radius: var(--border-radius);
-    padding-left: 2%;
-    padding-right: 2%;
-    box-shadow: var(--shadow);
+    
+    
+    
 }
 
 
-
-#work-values, #lets-connect {
+#work-values {
     background: var(--bg);
     max-width: 500px;
     min-width: 200px;
     margin: 50px 150px;
     margin-left: auto;
-    border-radius: var(--border-radius);
-    min-height: auto;
-    padding: 0 2% 0 2%;
-    box-shadow: var(--shadow);
+    
+    
+    
 }
 
 
-/*links*/
 
-
-
-ul {
-    columns: 3;
+#lets-connect {
+    background: var(--bg);
 }
+.break-line p {
+    font-size: 50px;
+    text-align: center;
+    
+}
+
+
+
 
 
 
