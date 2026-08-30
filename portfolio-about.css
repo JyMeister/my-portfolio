@@ -206,8 +206,9 @@ ul {
 
 
 #skills-list li, #fun-facts li {
-    margin-left: 20px;
-    margin-bottom: 20px; /*Adds space in between items*/
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
     padding: 10px;
     text-align: center;
     border-radius: 20px;
@@ -221,6 +222,7 @@ ul {
     max-width: 500px;
     min-width: 200px;
     margin: 50px 150px;
+    font-size: 12px;
 }
 
 
@@ -230,6 +232,7 @@ ul {
     min-width: 200px;
     margin: 50px 150px;
     margin-left: auto;
+    font-size: 15px;
 }
 
 
