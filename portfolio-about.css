@@ -1,4 +1,4 @@
-@import "tailwindcss";
+
 
 
 
@@ -38,8 +38,26 @@
 
 
 * {
-    
     box-sizing: border-box;
+}
+
+/* #nav ul: flex justify-center space-x-4 */
+
+#nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+#nav ul li {
+  margin-left: 1rem; /* space-x-4 only applies margin between items */
+}
+
+#nav li {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  list-style: none;
 }
 
 a {
@@ -101,15 +119,16 @@ body {
   border-width: 10px;
   border-color: #ffffff;
   border-radius: 20px;
+  padding: 0 0 6vh 0;
 }
 
 /* h2 headings */
 
 h2 {
   font-family: "Quintessential", serif;
-    font-style: normal;
-    text-align: center;
-    font-size: 30px;
+  font-style: normal;
+  text-align: center;
+  font-size: 30px;
 }
 
 
@@ -125,43 +144,24 @@ h2 {
   padding-top: 0.875rem;
   text-align: center;
   font-family: "Quintessential", serif;
-    font-style: normal;
+  font-style: normal;
 }
 
-/* #nav wrapper div: text-white mt-6 */
-#nav {
-  color: #ffffff;
-  margin-top: 1.5rem;
-}
 
-/* #nav ul: flex justify-center space-x-4 */
-#nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-}
 
-#nav ul li {
-  margin-left: 1rem; /* space-x-4 only applies margin between items */
-}
-
-/* #nav li: text-xl */
-#nav li {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-  
-}
 
 ul {
     columns: 3;
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
 }
 
 
 #skills-list,
 #work-values,
-#fun-facts,
-#lets-connect {
+#fun-facts
+ {
   background-color: var(--bg);
   max-width: 56vh;
   min-width: 100vh;
@@ -173,13 +173,12 @@ ul {
   padding-right: 2%;
   padding-bottom: 1%;
   box-shadow: var(--glow);
-  
 }
 
 
 
 
-#about-me {
+#about-me, #lets-connect{
   margin-top: 5vh;
   font-size: 20px;
   background-color: var(--bg);
@@ -193,32 +192,18 @@ ul {
   padding-right: 2%;
   padding-bottom: 1%;
   box-shadow: var(--glow);
-  
 }
-
-
-
-
-
 
 .center-wrapper {
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 5%;
+  padding-right: 5%;
   padding-top: 5%;
-  padding-bottom: 10%;
-}
-
-
-#fun-facts .center-wrapper {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-bottom: 5%;
   text-align: center;
 }
 
 
-.you-lost {
-  cursor: pointer;
-}
+
 
 #skills-list li, #fun-facts li {
     margin-left: 20px;
@@ -228,6 +213,7 @@ ul {
     border-radius: 20px;
     box-shadow: var(--shadow);
     background-color: var(--bg-off-set);
+    break-inside: avoid; /* Prevents items from breaking across columns */
 }
 
 #skills-list, #fun-facts {
@@ -235,9 +221,6 @@ ul {
     max-width: 500px;
     min-width: 200px;
     margin: 50px 150px;
-    
-    
-    
 }
 
 
@@ -247,20 +230,15 @@ ul {
     min-width: 200px;
     margin: 50px 150px;
     margin-left: auto;
-    
-    
-    
 }
 
-#lets-connect {
-    background: var(--bg);
-    margin-bottom: 3vh;
-}
+
 
 .break-line p {
     font-size: 50px;
     text-align: center;
     margin: 5vh;
+    text-shadow: var(--text-shadow);
 }
 
 
