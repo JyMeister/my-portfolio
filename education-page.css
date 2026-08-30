@@ -143,75 +143,72 @@ h2 {
   font-style: italic;
   line-height: 1.7;
   text-align: center;
+  color: #ffffff;
 }
 
 
 
 
-#formal-education, #high-school {
+#swic-edu, #washu-edu  {
     text-align: center;
     background: var(--bg);
     max-width: 500px;
     min-width: 200px;
-    margin: 50px 150px;
     border-radius: var(--border-radius);
     padding: 0 2% 1% 2%;
-    box-shadow: var(--shadow);
+    box-shadow: var(--glow);
     flex: 1;
-    
-}
-
-
-
-
-#formal-education, #high-school, #online-courses, #online-courses-fcc {
-    text-align: center;
-    background: var(--bg);
-    max-width: 500px;
-    min-width: 200px;
     margin: 0 auto;
     margin-top: 3rem;
-    border-radius: var(--border-radius);
-    padding: 0 2% 1% 2%;
-    box-shadow: var(--shadow);
-    
-  }
+    min-height: 40vh;
+    min-width: 40vh;
+}  
 
-  #online-courses, #online-courses-fcc {
+#udemy-certificates, #free-code-camp, #launch-code{
     text-align: center;
     background: var(--bg);
-    max-width: 500px;
-    min-width: 200px;
-    margin: 0 auto;
-    margin-top: 3rem;
     border-radius: var(--border-radius);
     padding: 0 2% 1% 2%;
-    box-shadow: var(--shadow);
-    min-height: 380px;
-  }
+    box-shadow: var(--glow);
+    flex: 1;
+    margin: 0 auto;
+    margin-top: 3rem;
+    min-height: 10vh;
+    min-width: 10vh;
+}  
 
-  #online-courses-fcc {
-    padding-top: 5px;
-  }
-
-  .online {
+  .online, .formal-education {
     display: flex;
     align-items: center;
-    
   }
 
 
 
-.timeline {
-  border-left: 3px solid #ddd;
-  margin-bottom: 2rem;
-  padding-left: 1rem;
-  position: relative;
-}
+
 
 footer {
       font-style: italic;
-      color: black;
+      color: white;
       text-align: center;
       margin-top: 3rem;
     }
+
+
+
+
+
+    /* Swic classes */
+
+    /* . */
+    
+    /* LaunchCode classes */
+
+    /* 2606 FlexPath */
+
+    /* FreeCodeCamp classes */
+
+    /* Responsive Web Design | JavaScript Algorithms and Data Structures */
+
+    /* WashU classes */
+
+    /* TBA */
