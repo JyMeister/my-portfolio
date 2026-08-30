@@ -92,7 +92,7 @@ body {
 }
 
 
-/* header wrapper section: content-center bg-[rgba(0,27,84,0.658)] m-4 border-double border-[10px] border-white rounded-20 */
+/* header wrapper section*/
 .custom-body {
   align-content: center;
   background-color: rgba(0, 27, 84, 0.4);
@@ -103,16 +103,29 @@ body {
   border-radius: 20px;
 }
 
-/* h2 headings: font-['MedievalSharp'] font-semibold text-4xl mt-2 */
+/* h2 headings */
+
 h2 {
-    font-family: "Quintessential", serif;
-    font-weight: 400;
+  font-family: "Quintessential", serif;
     font-style: normal;
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-    margin-top: 0.5rem;
     text-align: center;
-    padding-top: 5px;
+    font-size: 30px;
+}
+
+
+#about-me h2,
+#skills-list h2,
+#work-values h2,
+#fun-facts h2,
+#lets-connect h2 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding-top: 0.875rem;
+  text-align: center;
+  font-family: "Quintessential", serif;
+    font-style: normal;
 }
 
 /* #nav wrapper div: text-white mt-6 */
@@ -143,7 +156,8 @@ h2 {
 ul {
     columns: 3;
 }
-#about-me,
+
+
 #skills-list,
 #work-values,
 #fun-facts,
@@ -166,24 +180,25 @@ ul {
 
 
 #about-me {
-    margin-top: 5vh;
-    font-size: 20px;
+  margin-top: 5vh;
+  font-size: 20px;
+  background-color: var(--bg);
+  max-width: 56vh;
+  min-width: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  padding-top: 0;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 1%;
+  box-shadow: var(--glow);
+  
 }
 
 
 
-#about-me h2,
-#skills-list h2,
-#work-values h2,
-#fun-facts h2,
-#lets-connect h2 {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  padding-top: 0.875rem;
-  text-align: center;
-}
+
 
 
 .center-wrapper {
