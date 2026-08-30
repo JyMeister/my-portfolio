@@ -235,13 +235,17 @@ ul {
 
 
 .break-line p {
-    font-size: 50px;
+    font-size: 25px;
     text-align: center;
     margin: 5vh;
     text-shadow: var(--text-shadow);
 }
 
-
+.nav-line p {
+    font-size: 25px;
+    text-align: center;
+    text-shadow: var(--text-shadow);
+}
 
 
 
