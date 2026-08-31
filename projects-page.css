@@ -150,7 +150,12 @@ hr {
   box-shadow: var(--text-shadow);
 }
 
-
+img {
+  max-width: 30%;
+  max-height: 30%;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+}
 
 
 
