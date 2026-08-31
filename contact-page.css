@@ -1,44 +1,158 @@
+:root {
+      --bg: rgba(0, 27, 84, 0.495);
+      --bg-off-set: rgba(8, 14, 27, 0.658);
+      --border-radius: 20px;
+      --shadow: 0px 0px 10px rgb(0, 188, 166);
+      --text-shadow: 2px 2px 4px #00fff7ba;
+      --glow: 0 0 20px #008bfcae, 0 0 30px #19107d, 0 0 50px rgba(77, 7, 168, 0.996);
+      --link-image: url(portfolio_photos/button-img.png);
+}
+/* API FONTS */
+.quintessential-regular {
+  font-family: "Quintessential", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.vt323-regular {
+  font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.medievalsharp-regular {
+  font-family: "MedievalSharp", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cinzel {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+
 * {
-  font-family: Arial, Helvetica, sans-serif;
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-.header {
-  background-color: rgba(255, 255, 255, 0.13);
-  text-align: center;
-  padding: 1px;
+/* #nav ul: flex justify-center space-x-4 */
+
+#nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
 }
 
+#nav ul li {
+  margin-left: 1rem; /* space-x-4 only applies margin between items */
+}
+
+#nav li {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  list-style: none;
+}
+
+a {
+  position: relative; /* needed so the ::before pseudo-element can be positioned inside it */
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  transition: background-color 0.3s ease, border-radius 0.3s ease;
+  background-color: var(--bg);
+  box-shadow: var(--shadow);
+  border-radius: 15px;
+  text-shadow: var(--text-shadow);
+  overflow: hidden; /* keeps the fading image from spilling outside the rounded corners */
+  z-index: 0;
+  cursor: pointer;
+}
+
+a::before {
+    background-image: var(--link-image);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: -1; /* sits behind the link text */
+}
+
+a:hover {
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+a:hover::before {
+    opacity: 1;
+}
+
+
+/* body: bg-[url('/portfolio_photos/main-bg.png')] bg-cover bg-fixed */
 body {
-
-  border: 10px solid black;
-  background: radial-gradient(circle, white, black 90%);
+  background-image: url('/portfolio_photos/main-bg.png');
+  background-size: cover;
   background-attachment: fixed;
-  color:rgb(0, 0, 0);
-  margin: auto;
-  padding-bottom: 200px;
+  color: #ffffff;
 }
 
-#quote {
-  font-style: italic;
-  line-height: 1.7;
+.custom-body {
+  align-content: center;
+  background-color: rgba(0, 27, 84, 0.4);
+  margin: 1vh 30vh 1vh 30vh;
+  border-style: double;
+  border-width: 10px;
+  border-color: #ffffff;
+  border-radius: 20px;
+  padding: 0 0 4vh 0;
+}
+
+/* h2 headings */
+
+h2 {
+  font-family: "Quintessential", serif;
+  font-style: normal;
+  text-align: center;
+  font-size: 30px;
+}
+
+.center-wrapper {
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   text-align: center;
 }
-#artist, #quote {
-  font-size: 12px;
-  text-align: center;
+
+.break-line p {
+    font-size: 25px;
+    text-align: center;
+    margin: 5vh;
+    text-shadow: var(--text-shadow);
 }
+
+.nav-line p {
+    font-size: 25px;
+    text-align: center;
+    text-shadow: var(--text-shadow);
+}
+
+hr {
+  box-shadow: var(--text-shadow);
+}
+
+
+
+
 
 
 /*links*/
-a {
-
-  text-decoration: none;
-  color: black;
-}
-a:hover {
-
-  color: white;
-  background-color: black;
-  padding: 7px;
-}
