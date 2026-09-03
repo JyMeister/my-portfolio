@@ -150,9 +150,68 @@ hr {
   box-shadow: var(--text-shadow);
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: var(--border-radius);
+  border: none;
+  box-shadow: var(--shadow);
+}
+
+button[type="submit"] {
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+  border: none;
+  background-image: var(--link-image);
+  background-size: cover;
+  color: white;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  
+}
+
+button[type="submit"]:hover {
+  background-color: var(--bg-off-set);
+  box-shadow: var(--glow);
+  
+}
 
 
 
 
+#lets-connect h2 {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  padding-top: 0.875rem;
+  text-align: center;
+  font-family: "Quintessential", serif;
+  font-style: normal;
+}
 
-/*links*/
+#lets-connect{
+  margin-top: 5vh;
+  font-size: 20px;
+  background-color: var(--bg);
+  max-width: 56vh;
+  min-width: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  padding-top: 0;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 1%;
+  box-shadow: var(--glow);
+}

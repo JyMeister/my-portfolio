@@ -55,3 +55,20 @@ typeMessage();
 function loseTheGame() {
       alert("😈 You just lost The Game.");
     }
+
+
+    // USED BY Contact page
+
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', validateForm);
+
+    function validateForm(event) {
+      event.preventDefault(); // Prevent form submission
+    }
+
+    function submitForm() {
+      // Perform form validation here (if needed)
+      // If validation passes, you can submit the form
+      contactForm.submit();
+    }
+    
