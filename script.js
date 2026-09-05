@@ -29,7 +29,7 @@ function type() {
   if (i < title.length) {
     typingTitle.textContent += title[i];
     i++;
-    setTimeout(type, 97.5); // adjust speed here (lower = faster)
+    setTimeout(type, 180.5); // adjust speed here (lower = faster)
   } else {
     typingTitle.classList.remove("typing-cursor"); // remove cursor when done
   }
@@ -41,7 +41,7 @@ function typeMessage() {
   if (j < message.length) {
     typingMessage.textContent += message[j];
     j++;
-    setTimeout(typeMessage, 60); // adjust speed here (lower = faster)
+    setTimeout(typeMessage, 47); // adjust speed here (lower = faster)
   } else {
     typingMessage.classList.remove("typing-cursor"); // remove cursor when done
   }
