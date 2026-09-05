@@ -99,7 +99,7 @@ a:hover::before {
 
 /* body: bg-[url('/portfolio_photos/main-bg.png')] bg-cover bg-fixed */
 body {
-  background-image: url('/portfolio_photos/main-bg.png');
+  background-image: url('portfolio_photos/main-bg.png');
   background-size: cover;
   background-attachment: fixed;
   color: #ffffff;
