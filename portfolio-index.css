@@ -256,6 +256,31 @@ body.dark-mode #darkModeToggle {
 
 }
 
+/* Tablet Screen */
+@media (min-width: 769px) and (max-width: 1258px) {
+    .intro {
+        margin: 5% 5%;
+    }
+    ul {
+        margin: 20px 0;
+        font-size: 20px;
+        align-items: center;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    #typing-title {
+        font-size: 30px;
+    }
+    .fadeimg {
+        width: 30%;
+    }
+
+    .custom-body {
+        margin: 1vh 10vh 1vh 10vh;
+    }
+}
+
 
 
 
