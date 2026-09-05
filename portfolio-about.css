@@ -207,9 +207,9 @@ ul {
 
 
 #skills-list li, #fun-facts li {
-    margin-bottom: 15px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-bottom: 1.67vh;
+    margin-left: 1.11vh;
+    margin-right: 1.11vh;
     padding: 10px;
     text-align: center;
     border-radius: 20px;
@@ -299,9 +299,7 @@ body.dark-mode #darkModeToggle {
 
 /* Phone Screen */
 @media (max-width: 768px) {
-    .intro {
-        margin: 5% 5%;
-    }
+    
     ul {
         flex-direction: column;
         margin: 20px 0;
@@ -314,9 +312,20 @@ body.dark-mode #darkModeToggle {
     }
 
     .custom-body {
-        margin: 1vh 5vh 1vh 5vh;
+      margin: 1rem;
     }
 
+    #about-me,
+    #skills-list,
+    #work-values,
+    #fun-facts,
+    #lets-connect {
+      max-width: 100%;
+      min-width: unset;
+      width: 92%;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
 }
 
