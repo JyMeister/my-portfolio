@@ -19,8 +19,8 @@ const toggleButton = document.getElementById('darkModeToggle');
 
 
 
-const title = "Welcome to JayMeister Development";
-const message = "Hi! My name is Jay Braun. I am a Junior Web Developer.";
+const title = "JayMeister Development";
+const message = "Hi! My name is Jay Braun. I help small businesses with all their website needs.";
 const typingTitle = document.getElementById("typing-title");
 const typingMessage = document.getElementById("typing-message");
 let i = 0;

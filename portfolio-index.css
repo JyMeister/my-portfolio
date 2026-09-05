@@ -227,7 +227,34 @@ body.dark-mode #darkModeToggle {
 
 
 
+/* Phone Screen */
+@media (max-width: 768px) {
+    .intro {
+        margin: 5% 5%;
+    }
+    ul {
+        flex-direction: column;
+        margin: 20px 0;
+        font-size: 20px;
+        align-items: center;
+    }
 
+    .custom-body {
+        margin: 1vh 5vh 1vh 5vh;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+    #typing-title {
+        font-size: 30px;
+    }
+    .fadeimg {
+        width: 50%;
+    }
+
+
+}
 
 
 
