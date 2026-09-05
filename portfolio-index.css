@@ -1,4 +1,4 @@
-@import "tailwindcss";
+
 
 
 .typing-cursor::after {
@@ -12,19 +12,36 @@
 
 
 
-
-
-
-
 :root {
-      --bg: rgba(0, 27, 84, 0.658);
+      --bg: rgba(0, 27, 84, 0.495);
+      --bg-off-set: rgba(8, 14, 27, 0.658);
       --border-radius: 20px;
-      --shadow: 3px 3px 8px rgba(0, 188, 166, 0.638);
+      --shadow: 0px 0px 10px rgb(0, 188, 166);
       --text-shadow: 2px 2px 4px #00fff7ba;
+      --glow: 0 0 20px #008bfcae, 0 0 30px #19107d, 0 0 50px rgba(130, 7, 168, 0.996);
+      --link-image: url(portfolio_photos/button-img.png);
 }
 
-.newfont {
+.cinzel {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.quintessential-regular {
+  font-family: "Quintessential", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.vt323-regular {
   font-family: "VT323", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.medievalsharp-regular {
+  font-family: "MedievalSharp", cursive;
   font-weight: 400;
   font-style: normal;
 }
@@ -72,7 +89,7 @@ a:hover::before {
 
 /*universal styles*/
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    
     box-sizing: border-box;
     
 }
@@ -98,7 +115,7 @@ body {
 
 
 .header {
-    /*background-color: var(--bg);*/
+    /*background-color: var(--bg);*/ 
     text-align: center;
     padding: 20px 0;
     text-shadow: var(--text-shadow);
@@ -127,12 +144,15 @@ li {
 
 
 .custom-body {
-    border: 10px double rgb(230, 226, 226);
-    background: radial-gradient(circle, rgb(0, 79, 140), rgb(1, 0, 58) , black 90%);
-    color:rgb(255, 255, 255);
-    margin: 0 30vh 0 30vh;
-    min-height: 97.9vh;
-    box-sizing: border-box;
+    color: #ffffff;
+    align-content: center;
+    background-color: rgba(0, 27, 84, 0.4);
+    margin: 1vh 30vh 1vh 30vh;
+    border-style: double;
+    border-width: 10px;
+    border-color: #ffffff;
+    border-radius: 20px;
+    
 }
 
 h1 {
