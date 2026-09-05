@@ -216,6 +216,7 @@ button[type="submit"]:hover {
   box-shadow: var(--glow);
 }
 
+/*
 #contact-form{
   margin-top: 5vh;
   font-size: 20px;
@@ -231,3 +232,4 @@ button[type="submit"]:hover {
   padding-bottom: 5vh;
   box-shadow: var(--glow);
 }
+*/
