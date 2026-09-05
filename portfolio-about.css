@@ -307,12 +307,14 @@ body.dark-mode #darkModeToggle {
         align-items: center;
     }
     li {
-        font-size: 12px;
+        font-size: 10px;
         text-align: center;
+        margin: 1px 0;
     }
 
     .custom-body {
       margin: 1rem;
+      padding: 0 1rem 1.8rem 1rem;
     }
 
     #about-me,
@@ -326,8 +328,15 @@ body.dark-mode #darkModeToggle {
       margin-left: auto;
       margin-right: auto;
     }
+    #about-me, #lets-connect {
+      text-align: center;
+      font-size: 12px;
+    }
 
 }
+
+
+
 
 /* Tablet Screen */
 @media (min-width: 769px) and (max-width: 1258px) {
@@ -340,7 +349,7 @@ body.dark-mode #darkModeToggle {
         align-items: center;
     }
     li {
-        font-size: 12px;
+        font-size: 10px;
         text-align: center;
     }
 
