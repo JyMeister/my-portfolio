@@ -157,8 +157,8 @@ form {
   margin-top: 2rem;
 }
 
-#contact-form input,
-#contact-form textarea {
+#contactForm input,
+#contactForm textarea {
   width: 100%;
   max-width: 400px;
   padding: 0.5rem;

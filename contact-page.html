@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="contact-page.css">
     <link rel="icon" type="image/png" href="portfolio_photos/logo_2.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -37,12 +38,13 @@
                 download my resume</a></p>
             </div>
         
-            <form action="https://formspree.io/f/xnppayqy" data-netlify="true" method="POST" class="center-wrapper" id="contact-form">
+            <form action="https://formspree.io/f/xnppayqy" method="POST" class="center-wrapper" id="contactForm">
                 <input type="email" name="email" placeholder="Your email" required>
                 <input type="text" name="name" placeholder="Your name" required>
                 <textarea name="message" placeholder="What's your vision?" required></textarea>
                 <button type="submit">Send</button>
             </form>
+            <p id="formMessage" class="center-wrapper"></p>
         </section>
   <div class="break-line" aria-hidden="true">
             <p>━━━━━━━━━━⋅•⋅⊰∙∘☽༓☾∘∙⊱⋅•⋅━━━━━━━━━━</p>
@@ -52,6 +54,6 @@
 
 
   </section>
-  <script src="script.js"></script>
+  <script src="contact.js"></script>
 </body>
 </html>
