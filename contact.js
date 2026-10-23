@@ -2,11 +2,15 @@
 
     const contactForm = document.getElementById('contactForm');
     const formSubmit = document.getElementById('formMessage');
+    const sendMessage = document.getElementById('sendMessage');
 
+    formSubmit.textContent = "Send me a message!";
+    
     contactForm.addEventListener('submit', handleSubmit);
 
     async function handleSubmit(event) {
       event.preventDefault(); // stop the browser's normal submit (the page navigation)
+      
 
       try {
         const response = await fetch(contactForm.action, {
