@@ -165,24 +165,50 @@ form {
   border-radius: var(--border-radius);
   border: none;
   box-shadow: var(--shadow);
+  background-color: rgb(21, 13, 37);
+  color: rgb(0, 250, 254);
 }
 
 button[type="submit"] {
-  padding: 0.5rem 1rem;
-  border-radius: var(--border-radius);
-  border: none;
-  background-image: var(--link-image);
-  background-size: cover;
+  position: relative; /* needed so the ::before pseudo-element can be positioned inside it */
+  display: inline-block;
+  text-decoration: none;
   color: white;
-  cursor: pointer;
+  padding: 10px;
+  transition: background-color 0.3s ease, border-radius 0.3s ease;
+  background-color: var(--bg);
   box-shadow: var(--shadow);
-  
+  border-radius: 15px;
+  text-shadow: var(--text-shadow);
+  overflow: hidden; /* keeps the fading image from spilling outside the rounded corners */
+  z-index: 0;
+  cursor: pointer;
+  border: none;
 }
 
+button[type="submit"]::before {
+    background-image: var(--link-image);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    z-index: -1; /* sits behind the link text */
+}
+
+
 button[type="submit"]:hover {
-  background-color: var(--bg-off-set);
-  box-shadow: var(--glow);
-  
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+button[type="submit"]:hover::before {
+    opacity: 1;
 }
 
 #formMessage {
